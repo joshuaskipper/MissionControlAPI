@@ -1,7 +1,6 @@
 # Mission Control Simulation API
 
-The **Mission Control Simulation API** is a fun practice API designed for students and developers learning how to work with APIs.  
-It provides a set of endpoints for simulation of exploring space missions, agencies, spacecraft, and crews.  
+The **Mission Control Simulation API** is a fun practice API designed for students and developers learning how to work with APIs. It provides a set of endpoints for simulation of exploring space missions, agencies, spacecraft, and crews.  
 
 Instead of using the same old boring APIs, this project gives you something cool and space-themed to experiment with while learning concepts like HTTP requests, JSON parsing, and data modeling.
 
