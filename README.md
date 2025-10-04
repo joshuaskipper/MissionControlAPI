@@ -13,7 +13,7 @@ https://missioncontrol-e832.onrender.com/api/missions
 
 ## Docs URL
 
-[https://missioncontrol-e832.onrender.com/scalar/v1](https://client.scalar.com/workspace/default/request/3aquUDtMbEEnfK2P_klcO)
+https://missioncontrol-e832.onrender.com/scalar/v1
 
 
 ---
