@@ -24,7 +24,7 @@ Instead of using the same old boring APIs, this project gives you something cool
 
 ---
 
-## Example C# Usage
+## Example C# 
 
 Here’s a simple console app that calls the API and displays mission data:
 
