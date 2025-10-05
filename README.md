@@ -6,13 +6,16 @@ Instead of using the same old boring APIs, this project gives you something cool
 
 ---
 
-## Base URL
+## Base URLs
 
-https://missioncontrol-e832.onrender.com/api/missions
+### v2 — Simplified model with direct data  
+[`https://missioncontrol-e832.onrender.com/api/v2/Missions`](https://missioncontrol-e832.onrender.com/api/v2/Missions)
 
-## Docs URL
+### v1 — Includes relationships and reference tables  
+[`https://missioncontrol-e832.onrender.com/api/v1/Missions`](https://missioncontrol-e832.onrender.com/api/v1/Missions)
 
-https://missioncontrol-e832.onrender.com/scalar/v1
+
+
 
 
 ---
@@ -37,7 +40,7 @@ namespace API
             Console.WriteLine($"\nMission Simulation Control API\n");
 
             // Base URL for the mission API endpoint
-            string url = "https://missioncontrol-e832.onrender.com/api/Missions";
+            string url = "https://missioncontrol-e832.onrender.com/api/v1/Missions";
 
             // Init HTTP client to send and receive web requests
             HttpClient client = new HttpClient();
@@ -64,14 +67,14 @@ namespace API
                     // Deserialize JSON into a list of MissionMain objects
                     var missionJson = JsonSerializer.Deserialize<List<MissionMain>>(json);
 
-                    Console.WriteLine($"{"ID",-45} {"MissionName",-42} {"Agency",-25} {"Crew",-30} {"LaunchDate",-15}");
-                    Console.WriteLine(new string('=', 167));
+                    Console.WriteLine($"{"ID(GUID)",-42} {"MissionName",-42} {"Agency",-25} ");
+                    Console.WriteLine(new string('*', 100));
 
 
                     // Loop through each mission and print its details in formatted columns
                     foreach (var item in missionJson)
                     {
-                        Console.WriteLine($"ID:{item.missionId,-42} {item.name,-42} {item.agency,-25} {item.crew.astronautName,-30} {item.launchDate,-15}");
+                        Console.WriteLine($"{item.missionId,-42} {item.name,-42} {item.agency,-25}");
 
                     }
                 }
