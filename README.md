@@ -15,7 +15,7 @@ Instead of using the same old boring APIs, this project gives you something cool
 ### v2 — Simplified Missions model with direct data  
 [`https://missioncontrol-e832.onrender.com/api/v2/Missions`](https://missioncontrol-e832.onrender.com/api/v2/Missions)
 
-### v1 — Includes relationships and reference tables  
+### v1 — Missions model including relationships and reference tables  
 [`https://missioncontrol-e832.onrender.com/api/v1/Missions`](https://missioncontrol-e832.onrender.com/api/v1/Missions)
 
 
