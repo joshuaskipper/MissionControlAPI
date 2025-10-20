@@ -12,7 +12,7 @@ Instead of using the same old boring APIs, this project gives you something cool
 ### API Docs 
 [`https://missioncontrol-e832.onrender.com/scalar/v1`](https://missioncontrol-e832.onrender.com/scalar/v1)
 
-### v2 — Simplified model with direct data  
+### v2 — Simplified Missions model with direct data  
 [`https://missioncontrol-e832.onrender.com/api/v2/Missions`](https://missioncontrol-e832.onrender.com/api/v2/Missions)
 
 ### v1 — Includes relationships and reference tables  
