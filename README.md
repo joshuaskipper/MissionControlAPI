@@ -34,20 +34,23 @@ using System.Text.Json;
 
 namespace TEST
 {
-    class Program 
+    class Program
     {
-        public static async Task Main(string[] args) 
+        public static async Task Main(string[] args)
         {
             Console.WriteLine(DateTime.Today.ToString("D"));
 
-
+            //Base URL
             string url = "https://missioncontrol-e832.onrender.com/api/v2/Missions";
+
+            // Base URL with filters(***Currently only filter by 'name' & 'agency')
+            string urlFilter = "https://missioncontrol-e832.onrender.com/api/v2/Missions?filterOn=agency&filterQuery=nasa";
 
             // Init HTTP client to send and receive web requests
             HttpClient client = new HttpClient();
 
             // Deserialize JSON into a list of MissionMain objects
-            var mission = await client.GetFromJsonAsync<List<Mission>>(url);
+            var mission = await client.GetFromJsonAsync<List<Mission>>(urlFilter);
 
             // loop through each record
             foreach (var item in mission)
@@ -64,8 +67,8 @@ namespace TEST
             public string agency { get; set; }
             public DateTime launchDate { get; set; }
         }
-    }    
-}    
+    }
+}
 ```
 
 ## Enhanced API Call with Error Handling and Validation
